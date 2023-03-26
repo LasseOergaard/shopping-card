@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/lasseoergaard.github.io/shopping-card/static/css/main.0dc3b672.css",
+    "main.js": "/lasseoergaard.github.io/shopping-card/static/js/main.5704feb4.js",
+    "static/media/picture2.webp": "/lasseoergaard.github.io/shopping-card/static/media/picture2.dd91a10d924f00b1b9c6.webp",
+    "static/media/shoe1.webp": "/lasseoergaard.github.io/shopping-card/static/media/shoe1.041bbac6e2a711e1be40.webp",
+    "static/media/shoe2.webp": "/lasseoergaard.github.io/shopping-card/static/media/shoe2.4dc20d44eed4e5f96b23.webp",
+    "static/media/picture1.webp": "/lasseoergaard.github.io/shopping-card/static/media/picture1.151ab7a91c2684bc838d.webp",
+    "static/media/shoe3.webp": "/lasseoergaard.github.io/shopping-card/static/media/shoe3.86473daadde4e3c18e45.webp",
+    "static/media/shoe4.webp": "/lasseoergaard.github.io/shopping-card/static/media/shoe4.4c36c62771c6e8dd4509.webp",
+    "index.html": "/lasseoergaard.github.io/shopping-card/index.html",
+    "main.0dc3b672.css.map": "/lasseoergaard.github.io/shopping-card/static/css/main.0dc3b672.css.map",
+    "main.5704feb4.js.map": "/lasseoergaard.github.io/shopping-card/static/js/main.5704feb4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0dc3b672.css",
+    "static/js/main.5704feb4.js"
+  ]
+}
