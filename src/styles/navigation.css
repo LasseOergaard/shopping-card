@@ -1,0 +1,50 @@
+.navigation {
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.nav-top {
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 32px 6px 32px;
+}
+
+.nav-top div {
+  font-size: 14px;
+}
+
+.nav-top div em {
+  font-style: normal;
+  color: rgb(206, 75, 0);
+  font-size: 14px;
+}
+
+.navigation-links {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: white;
+}
+
+.navigation-logo{
+  width: 200px;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  font-weight: 300;
+}
+
+.navigation ul {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+
+}
+
+.navigation-link {
+  color: black;
+  font-weight: 300;
+}
+
+

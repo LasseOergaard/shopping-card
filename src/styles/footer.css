@@ -1,0 +1,40 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: rgb(108, 27, 230);
+  color: white;
+  font-weight: 200;
+  row-gap: 24px;
+  gap: 12px;
+  padding: 32px;
+}
+
+.footer div div:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer div div {
+  margin-bottom: 10px;
+}
+
+.footer-title {
+  font-size: 24px;
+  margin-bottom: 4px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.fast-delivery, .payment-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+.fast-delivery div, .payment-options div {
+  height: 32px;
+  width: 64px;
+  background-color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}
