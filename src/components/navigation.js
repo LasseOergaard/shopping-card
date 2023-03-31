@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 export default class Navigation extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <nav className="navigation">
@@ -18,18 +21,18 @@ export default class Navigation extends Component {
         </div>
         <div>
           <ul className="navigation-links">
+            <div className="navigation-logo">Markando</div>
             <Link to={"/"}>
               <li className="navigation-link">Home</li>
             </Link>
-            <Link to={"/about"}>
-              <li className="navigation-link">About</li>
-            </Link>
-            <div className="navigation-logo">Markando</div>
             <Link to={"/shop"}>
               <li className="navigation-link">Shop</li>
             </Link>
-            <Link to={"/shop"}>
-              <li className="navigation-link">News</li>
+            <Link className="relative cart-link" to={"/cart"}>
+              <li className="navigation-link">
+                <i className="fa-solid fa-bag-shopping"></i>
+              </li>
+              <div className="cart-length">{this.props.cartLength}</div>
             </Link>
           </ul>
         </div>

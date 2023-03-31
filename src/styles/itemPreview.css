@@ -1,7 +1,7 @@
 .item-preview {
-  height: 1500px;
   display: flex;
   gap: 32px;
+  padding-right: 24px;
 }
 
 .current {
@@ -28,20 +28,22 @@
 }
 
 .current-item-image {
-  width: 100%; /* or any custom size */
+  width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
 .current-item-info {
+  flex: 1;
   margin-top: 24px;
   margin-right: 24px;
+  margin-bottom: 32px;
 }
 
 .current-item-name {
   font-size: 24px;
   font-weight: 300;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   margin-bottom: 8px;
 }
 
@@ -53,4 +55,169 @@
 
 .current-item-price {
   font-size: 20px;
+  margin-bottom: 32px;
+}
+
+.similar-item-model {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+.similar-item-model b {
+  font-weight: 400;
+}
+
+.similar-items-images {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.similar-items-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.similar-items-images a {
+  width: 23%;
+}
+
+.add-to-cart {
+  margin-top: 32px;
+}
+
+.choose-size {
+  margin-bottom: 8px;
+}
+
+.choose-size-button-inactive {
+  background: none;
+  width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.choose-size-button-active {
+  background: none;
+  width: 100%;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: none;
+  border-top: 2px solid black;
+  padding: 9px;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+
+.choose-size-button-inactive:hover{
+  border: 2px solid black;
+  padding: 9px;
+}
+
+
+.choose-size-button-text {
+  color: gray;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.choose-size-button .fa-chevron-down,
+.choose-size-button .fa-chevron-up {
+  align-self: center;
+}
+
+.put-in-cart-button {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+.put-in-cart-button:hover {
+  opacity: 0.7;
+}
+
+.shipping {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+}
+
+.shipping-row-1 {
+  border-bottom: 1px solid grey;
+  padding: 24px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.shipping-row-1 a {
+  color: rgb(84, 0, 84);
+}
+.shipping-row-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 8px;
+  border-bottom: 1px solid grey;
+  padding: 24px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.shipping-row-3 {
+  padding: 24px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+
+/* Sizings */
+
+.sizings-active {
+  border-left: 2px solid black;
+  border-right:2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.sizings-inactive{
+  display: none;
+}
+
+.size1, .size2, .size3, .size4 {
+  padding:14px 10px 14px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.size1:hover, .size2:hover, .size3:hover, .size4:hover {
+  background-color: rgb(234, 234, 234);
+}
+
+.give-border {
+  border: 1px solid black;
+}
+
+.require-size{
+  border: 2px solid rgb(181, 0, 0);
+  padding:9px;
 }

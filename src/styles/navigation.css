@@ -28,7 +28,7 @@
 }
 
 .navigation-logo{
-  width: 200px;
+  width: 400px;
   text-align: center;
   font-size: 30px;
   color: black;
@@ -48,3 +48,21 @@
 }
 
 
+.cart-length {
+  top: 10px;
+  right: -6px;
+  font-size: 10px;
+  display: flex;
+  position: absolute;
+  background-color: rgb(206, 75, 0);
+  width: 16px;
+  height: 16px;
+  border-radius: 100px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.relative{
+  position: relative;
+}

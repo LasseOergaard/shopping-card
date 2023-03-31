@@ -41,7 +41,7 @@
 .spring-discount-top-right {
   flex: 1;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .spring-discount-img {
@@ -121,7 +121,7 @@
 .ex-top-right {
   flex: 1;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .ex-img {
