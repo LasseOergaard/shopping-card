@@ -11,6 +11,9 @@ import "./styles/footer.css"
 import "./styles/EX89.css"
 import "./styles/itemPreview.css"
 import "./styles/cart.css"
+import "./styles/shop.css"
+
+/* Components */
 import App from "./app";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

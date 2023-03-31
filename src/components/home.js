@@ -60,7 +60,7 @@ export default class Home extends Component {
             </div>
           </div>
           <div className="ex-bottom">
-            <EX89Shoes/>
+            <EX89Shoes shoes={this.props.shoes}/>
           </div>
         </div>
       </div>

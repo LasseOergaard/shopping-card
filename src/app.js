@@ -10,6 +10,10 @@ import Home from "./components/home";
 import ItemPreview from "./components/itemPreview";
 import Navigation from "./components/navigation";
 import Shop from "./components/shop";
+import shoe1 from "./images/shoe1.webp";
+import shoe2 from "./images/shoe2.webp";
+import shoe3 from "./images/shoe3.webp";
+import shoe4 from "./images/shoe4.webp";
 
 export default class App extends Component {
   constructor(props) {
@@ -19,6 +23,36 @@ export default class App extends Component {
       itemToAdd: {},
       cart: [],
       cartTotal: 0,
+      shoes: [
+        {
+          ShoeName: "ASICS SportStyle",
+          ShoeModel: "EX89 UNISEX - Sneakers - White/Illusion Blue",
+          price: 129,
+          ImageUrl: shoe1,
+          id: "4f57ec044cbc496c849a4a61b52499ed",
+        },
+        {
+          ShoeName: "ASICS SportStyle",
+          ShoeModel: "EX89 UNISEX - Sneakers - White/French Green",
+          price: 129,
+          ImageUrl: shoe2,
+          id: "c9b897b4e67e41ad9419b5d8b247f492",
+        },
+        {
+          ShoeName: "ASICS SportStyle",
+          ShoeModel: "EX89 UNISEX - Sneakers - White/Cream",
+          price: 119,
+          ImageUrl: shoe3,
+          id: "37305c05a24b43b2a1774e55d3ef1e67",
+        },
+        {
+          ShoeName: "ASICS SportStyle",
+          ShoeModel: "EX89 UNISEX - Sneakers - White/Habanero",
+          price: 99,
+          ImageUrl: shoe4,
+          id: "1aab7570f7db4304b5f47ff39f77f840",
+        },
+      ],
     };
 
     this.requireSize = this.requireSize.bind(this);
@@ -93,11 +127,11 @@ export default class App extends Component {
       <BrowserRouter>
         <Navigation cartLength={this.state.cart.length} />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/shop" element={<Shop />} />
+          <Route path="/" element={<Home shoes={this.state.shoes} />} />
+          <Route path="/shop" element={<Shop shoes={this.state.shoes}  />} />
           <Route
             path="/shop/:id"
-            element={<ItemPreview handleAddToCart={this.addToCart} />}
+            element={<ItemPreview handleAddToCart={this.addToCart} shoes={this.state.shoes} />}
           />
           <Route
             path="/cart"

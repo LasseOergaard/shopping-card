@@ -1,0 +1,22 @@
+.shoe-name-shop,
+.shoe-model-shop,
+.shoe-price-shop {
+  color: black;
+}
+
+.shoe-model-shop,
+.shoe-name-shop {
+  font-size: 14px;
+  white-space: nowrap;
+  width: 22vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 300;
+
+}
+
+.shoe-price-shop {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
